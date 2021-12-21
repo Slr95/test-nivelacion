@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="form.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <title></title>
+</head>
+<body>
+  <div class="testbox">
+    <form action="/">
+      <div class="banner">
+        <h1>Complete el formulario</h1>
+      </div>
+      <div class="item">
+        <label for="name">¿Color favorito?<span>*</span></label>
+        <div class="name-item">
+          <input id="name" type="text" name="name"/>
+        </div>
+      </div>
+      <div class="item">
+        <label for="email">¿Comida favorita?<span>*</span></label>
+        <input id="email" type="email" name="email"/>
+      </div>
+      <div class="item">
+        <label for="bdate">Fecha de nacimiento<span>*</span></label>
+        <input id="bdate" type="date" name="bdate" required/>
+        <i class="fas fa-calendar-alt"></i>
+      </div>
+      <div class="question">
+        <label>Pablito clavo un clavito</label>
+        <div class="question-answer">
+          <div>
+            <input type="radio" value="none" id="radio_1" name="availability"/>
+            <label for="radio_1" class="radio"><span>Verdadero</span></label>
+          </div>
+          <div>
+            <input  type="radio" value="none" id="radio_2" name="availability"/>
+            <label for="radio_2" class="radio"><span>Falso</span></label>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="name-item">
+          <div>
+            <label for="monday">¿Practicas algun deporte?¿Cual?</label>
+            <input id="monday" type="text" name="name" />
+          </div>
+          <div>
+            <label for="tuesday">¿Cuales son tus hobbies?</label>
+            <input id="tuesday" type="text" name="name" />
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="name-item">
+          <div>
+            <label for="wednesday">¿Preferis el calor o el frio?</label>
+            <input id="wednesday" type="text" name="name" />
+          </div>
+          <div>
+            <label for="thursday">¿Que lenguajes de programacion dominas?</label>
+            <input id="thursday" type="text" name="name" />
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="name-item">
+          <div>
+            <label for="friday">¿Que carrera estas estudiando?</label>
+            <input id="friday" type="text" name="name" />
+          </div>
+          <div>
+            <label for="saturday">¿Por que te gustaria trabajar en Esolutions?</label>
+            <input id="saturday" type="text" name="name" />
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <label for="sunday">¿Donde te ves en 1 año?</label>
+        <input id="sunday" type="text" name="language"/>
+      </div>
+      <div class="item">
+        <label for="comment">Comentarios extras</label>
+        <textarea id="comment" rows="3"></textarea>
+      </div>
+      <button onclick="mostrar()">Enviar</button>
+      <script type="text/javascript">
+        function mostrar(){
+          Swal.fire(
+          'Formulario completado exitosamente!',
+          'Felicidades ya puedes cerrar la ventana!',
+        )
+        }
+      </script>
+    
+  </div>
+       
+</body>
+</html>
